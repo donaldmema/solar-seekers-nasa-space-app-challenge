@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-container {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: blueviolet;
+  background-image: url(https://blogs.nasa.gov/parkersolarprobe/wp-content/uploads/sites/274/2022/08/ParkerPerihelion13_8.31.2022.gif);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+h1 {
+  z-index: 10;
+}
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  /* background-image: url(https://sdo.gsfc.nasa.gov/assets/img/site/bg2.png); */
+  /* background-image: url(https://scx2.b-cdn.net/gfx/news/2019/galaxy.jpg); */
+
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 2px solid gray; */
+  /* padding: 0 2rem; */
+}
+
+video {
+  object-fit: fill;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+

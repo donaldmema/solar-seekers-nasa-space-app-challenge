@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.infopage-container {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(https://cdn.mos.cms.futurecdn.net/Tqq3BVZZAkbUyGvZmSfjQW.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+
+  border-radius: 20px;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card.first {
+  top: 50%;
+  left: 45%;
+}
+
+.card.second {
+  top: 10rem;
+  left: 10rem;
+}
+
+.card.third {
+  top: -10px;
+  left: 65%;
+}
+
+.card.fourth {
+  top: 70%;
+  left: 62%;
+}
+
+.card.fifth {
+  top: 70%;
+  left: 10rem;
+}
+
+.card.sixth {
+  top: 18rem;
+  left: 67%;
+}
+
+.card.seventh {
+  top: -5px;
+  left: 30%;
+}
+
+.card:hover {
+  width: 600px;
+  transition-delay: 0s;
+}
+.card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: Sun; */
+}
+
+.card .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: "#ff0000"; */
+  clip-path: circle(120px at center);
+
+  transition: 0.5s;
+}
+
+.card:hover .circle::before {
+  clip-path: circle(300px at center);
+}
+
+.card .image-init {
+  transition: 0.5s;
+}
+
+.card:hover .image-init {
+  display: none;
+}
+
+.card .circle.Logo {
+  position: relative;
+  width: 200px;
+  transition: 0.3s;
+  /* transition-delay: 8.5s; */
+}
+.card:hover .circle .logo {
+  transform: scale(0);
+  /* transition-delay: 8.5s; */
+}
+
+.content {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 48px;
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+  color: black;
+}
+.card:hover .content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+.content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1em;
+}
+.content p {
+  color: #fff;
+}
+.content a {
+  position: relative;
+  color: #111;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10 10px;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card .product_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  height: 220px;
+  transition: 0.2s;
+  transition-delay: 0s;
+}
+
+.card .product_img.first {
+  height: 300px;
+}
+
+.card .product_img.seventh {
+    height: 180px;
+  }
+
+.card:hover .product_img {
+  left: 72%;
+  transform: translate(-50%, -50%) scale(1);
+  transition-delay: 0.5s;
+}
