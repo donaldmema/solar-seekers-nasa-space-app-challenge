@@ -10,6 +10,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route
+          path="/solar-seekers-nasa-space-app-challenge"
+          element={<Navigate to="/homepage" />}
+        />
         <Route index element={<Navigate to="/homepage" />} />
         <Route
           path="/homepage"
